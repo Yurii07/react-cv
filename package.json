@@ -2,7 +2,10 @@
   "name": "myportfoliosite",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://yurii07.github.io/react-cv/",
   "dependencies": {
+    "add": "^2.0.6",
+    "gh-pages": "^3.0.0",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-collapsible": "^2.8.0",
@@ -17,7 +20,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm start build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
