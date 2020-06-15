@@ -20,7 +20,7 @@ class Resume extends Component {
                             />
                             <h2 style={{paddingTop: '2em'}}>Adamenko Yurii</h2>
                             <h4 style={{color: 'grey'}}>React Developer</h4>
-                            <hr style={{borderTop: '3px solid #833fb2'}}/>
+                            <hr style={{borderTop: '2px solid rgb(226, 41, 71)'}}/>
                             <p>Main goal to get the position of «React.js developer» with opportunities for
                                 professional and personal growth.</p>
                         </div>
@@ -49,7 +49,7 @@ class Resume extends Component {
                             </Cell>
                         </Grid>
 
-                        <hr style={{borderTop: '3px solid #e22947'}}/>
+                        <hr style={{borderTop: '2px solid #e22947'}}/>
 
                         <h2>Work Experience</h2>
 
@@ -67,15 +67,18 @@ class Resume extends Component {
                                 <div>
                                     Description
                                     <Experience
-                                        html='HTML5'
-                                        css='CSS3( Sass / Scss)'
-                                        javascript='JavaScript (ES6, ES7)'
-                                        JQuery='Jquery'
-                                        webpack='Webpack'
-                                        git='git'
-                                        laravel='Laravel ( Blade )'
-                                        zeplin='zeplin'
-                                        figma='Figma'
+                                        html='HTML5, '
+                                        css='CSS3( Sass / Scss), '
+                                        flexbox='flexbox, '
+                                        bootstrap='bootstrap, '
+                                        photoshop='photoshop, '
+                                        javascript='JavaScript (ES6, ES7), '
+                                        JQuery='Jquery, '
+                                        webpack='Webpack, '
+                                        figma='Figma, '
+                                        react='react, '
+                                        php='php, '
+                                        restapi='REST API '
                                     />
                                 </div>
                             </VerticalTimelineElement>

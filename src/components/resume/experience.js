@@ -27,6 +27,8 @@ class Experience extends Component {
                 <span>{this.props.jira}</span>
                 <span>{this.props.zeplin}</span>
                 <span>{this.props.figma}</span>
+                <span>{this.props.php}</span>
+                <span>{this.props.restapi}</span>
             </Collapsible>
         </Cell>
       </Grid>

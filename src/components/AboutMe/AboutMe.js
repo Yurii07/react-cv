@@ -15,7 +15,7 @@ const AboutMe = () => {
                     <div className="small top"><span className="first-letter">I</span>am</div>
                     <div className="big">
                         <p>A React developer from Kiev, Ukraine. I enjoy building everything from small business sites to rich interactive web apps. Want to know how i may help your project ? Check out my portfolio, you can get in touch with me
-                            <a href="#">here</a>
+                            <a href="#"> here </a>
                             with your lovely
                         </p>
                     </div>

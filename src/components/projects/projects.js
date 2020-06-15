@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
-
+import classes from './projects.module.css'
 
 class Projects extends Component {
   constructor(props) {
@@ -66,15 +66,20 @@ class Projects extends Component {
       )
     } else if(this.state.activeTab === 1) {
       return (
-        <div><h1>This is Angular</h1></div>
+        <div><h1>This is Latest</h1></div>
       )
     } else if(this.state.activeTab === 2) {
       return (
-        <div><h1>This is VueJS</h1></div>
+        <div><h1>This is Front-end</h1></div>
       )
     } else if(this.state.activeTab === 3) {
       return (
-        <div><h1>This is MongoDB</h1></div>
+        <div><h1>This is React</h1></div>
+      )
+    }
+    else if(this.state.activeTab === 4) {
+      return (
+          <div><h1>This is JavaScript</h1></div>
       )
     }
 
@@ -86,10 +91,11 @@ class Projects extends Component {
     return(
       <div>
         <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
+          <Tab>All</Tab>
+          <Tab>Latest</Tab>
+          <Tab>Front-end</Tab>
           <Tab>React</Tab>
-          <Tab>Angular</Tab>
-          <Tab>VueJS</Tab>
-          <Tab>MongoDB</Tab>
+          <Tab>Javascript</Tab>
         </Tabs>
           <Grid>
             <Cell col={12}>

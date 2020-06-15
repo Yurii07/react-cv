@@ -35,7 +35,7 @@
   padding: 2em;
 }
 
-/* Contact page css */
+/* contact page css */
 
 .contact-body {
   margin: auto;
@@ -77,7 +77,7 @@
 }
 
 
-/* Contact page css */
+/* contact page css */
 
 .avatar-img {
   height: 250px;
@@ -150,76 +150,5 @@
   }
 }
 .vertical-timeline {
-  /*color: #000;*/
-}
-
-.vertical-timeline-element-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-//=============
-.slide-menu {
-  color: #ffffff;
-}
-.mdl-layout__content {
-  //background: #000000;
-  //background: linear-gradient(to right, #434343, #000000);
-}
-.mdl-layout__drawer {
-  background: rgba(0,0,0,.8);
-}
-.is-visible .mdl-navigation__link {
-  animation-name: slideLeft;
-  -webkit-animation-name: slideLeft;
-
-  animation-duration: .6s;
-  -webkit-animation-duration: .6s;
-
-  animation-timing-function: ease-in-out;
-  -webkit-animation-timing-function: ease-in-out;
-
-  visibility: visible !important;
-}
-.is-visible .mdl-navigation__link:nth-child(2) {
-  animation-duration: .8s;
-  -webkit-animation-duration: .8s;
-}
-.is-visible  .mdl-navigation__link:nth-child(3) {
-  animation-duration: 1s;
-  -webkit-animation-duration: 1s;
-}
-.is-visible  .mdl-navigation__link:nth-child(3) {
-  animation-duration: 1.2s;
-  -webkit-animation-duration: 1.2s;
-}
-.is-visible  .mdl-navigation__link:nth-child(4) {
-  animation-duration: 1.4s;
-  -webkit-animation-duration: 1.4s;
-}
-@keyframes slideLeft {
-  0% {
-    transform: translateX(-150%);
-  }
-  //50%{
-  //  transform: translateX(-10%);
-  //}
-  //65%{
-  //  transform: translateX(5%);
-  //}
-  //80%{
-  //  transform: translateX(-4%);
-  //}
-  //95%{
-  //  transform: translateX(2%);
-  //}
-  100% {
-    transform: translateX(0%);
-  }
-}
-@media (min-width: 1025px) {
-  .mdl-layout__drawer-button {
-   display: none;
-  }
+  color: rgb(226, 41, 71);
 }

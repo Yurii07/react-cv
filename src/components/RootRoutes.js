@@ -1,4 +1,4 @@
-import Landing from "./landingpage";
+import Landing from "./main/landingpage";
 import AboutMe from "./AboutMe/AboutMe";
 import Contact from "./Contact/Contact";
 import Projects from "./projects/projects";

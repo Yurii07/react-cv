@@ -1,6 +1,6 @@
 import React from 'react';
 import {Grid, Cell, List, ListItem, ListItemContent} from 'react-mdl';
-import contact from './contact.module.scss'
+import classes from './Contact.module.css'
 
 const Contact = () => {
 
@@ -8,7 +8,7 @@ const Contact = () => {
         <div className="contact-body">
             <Grid className="contact-grid">
                 <Cell col={5}>
-                    <h2 className={contact.color}>Adamenko Yuriy</h2>
+                    <h2 className={classes.Name}>Adamenko Yurii</h2>
                     <img
                         src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/Fred_man-512.png"
                         alt="avatar"

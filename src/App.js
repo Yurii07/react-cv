@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
-import Main from './components/main';
+import Routes from './components/main/Routes';
 import { Link } from 'react-router-dom';
 
 import './App.scss';
@@ -33,23 +33,24 @@ class App extends Component {
             </Navigation>
         </Header>
 
-        <Drawer title={<Link style={{textDecoration: 'none', color: 'black'}} to="/">
+        <Drawer style={{background: 'rgba(0, 0, 0, 0.7)',  transitionDuration: '1s'}} title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">
+
             <img src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/Fred_man-512.png"
                  alt="avatar"
                  style={{width: '100%', height: 'auto', maxWidth: '100px'}} />
             <h2>Yurii A.</h2>
         </Link>}>
-            <Navigation>
-              <Link to="/resume">Resume</Link>
-              <Link to="/aboutme">About Me</Link>
-              <Link to="/projects">Projects</Link>
-              <Link to="/contact">Contact</Link>
+            <Navigation >
+              <Link to="/resume" className="slide-menu" style={{color: 'white'}}>Resume</Link>
+              <Link to="/aboutme" className="slide-menu" style={{color: 'white'}}>About Me</Link>
+              <Link to="/projects" className="slide-menu" style={{color: 'white'}}>Projects</Link>
+              <Link to="/contact" className="slide-menu" style={{color: 'white'}}>Contact</Link>
             </Navigation>
         </Drawer>
 
         <Content>
             <div className="page-content" />
-            <Main/>
+            <Routes/>
         </Content>
     </Layout>
 </div>
