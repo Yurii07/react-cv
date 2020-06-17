@@ -29,5 +29,11 @@ export default [
         path: '/resume',
         exact: true,
         component: Resume
+    },
+    {
+        path: '*',
+        exact: false,
+        // todo create component 404
+        // component: Page404
     }
 ]
