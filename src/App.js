@@ -36,16 +36,26 @@ class App extends Component {
                             </Navigation>
                         </Header>
                         {/*mobile menu*/}
-                        <Drawer style={{background: 'rgba(0, 0, 0, 0.7)', transitionDuration: '1s'}}
+                        <Drawer style={{
+                            background: 'rgba(0, 0, 0, 0.7)', transitionDuration: '1s', display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center'
+                        }}
                                 title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">
 
                                     <img src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/Fred_man-512.png"
                                          alt="avatar"
-                                         style={{width: '100%', height: 'auto', maxWidth: '100px'}}/>
+                                         style={{
+                                             width: '100%',
+                                             height: 'auto',
+                                             maxWidth: '100px',
+                                             margin: 'auto',
+                                             display: 'flex'
+                                         }}/>
                                     <h2>Yurii A.</h2>
                                 </Link>}>
                             <Navigation>
-                                <Link to="/resume" className="slide-menu" style={{color: 'white'}}>Resume</Link>
+                                <Link to="/resume" className="slide-menu " style={{color: 'white'}}>Resume</Link>
                                 <Link to="/aboutme" className="slide-menu" style={{color: 'white'}}>About Me</Link>
                                 <Link to="/projects" className="slide-menu" style={{color: 'white'}}>Projects</Link>
                                 <Link to="/contact" className="slide-menu" style={{color: 'white'}}>Contact</Link>
