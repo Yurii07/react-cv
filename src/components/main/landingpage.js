@@ -1,25 +1,24 @@
 import React, {Component} from 'react';
 import {Grid, Cell} from 'react-mdl';
 import ParticlesCanvas from "./particles";
-
+import classes from "./landingpage.module.css"
 
 class Landing extends Component {
     render() {
         return (
 
-            <div style={{width: '100%', margin: 'auto'}}>
+            <div className={classes.landingGridWrapper}>
 
-                <Grid className="landing-grid">
-                    <ParticlesCanvas
-                    />
+                <Grid className={classes.landingGrid}>
+                    <ParticlesCanvas/>
                     <Cell col={12}>
                         <img
-                            src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/Fred_man-512.png"
+                            src="https://freesvg.org/img/anon-hacker-behind-pc.png"
                             alt="avatar"
-                            style={{width: '100%', height: 'auto', maxWidth: '300px'}}
+                            className={classes.landingGridImg}
                         />
 
-                        <div className="banner-text">
+                        <div className={classes.bannerText}>
                             <h1>React Developer</h1>
 
                             <hr/>
@@ -28,7 +27,7 @@ class Landing extends Component {
                             <p> JavaScript | JQuery | React.js </p>
                             <p>Adobe Photoshop | Figma | Laravel (blade) | Gulp | Webpack | Git | GitLab | JIRA</p>
 
-                            <div className="social-links">
+                            <div className={classes.socialLinks}>
 
                                 {/* LinkedIn */}
                                 <a href="https://www.linkedin.com/in/yuriy-adamenko-4750858a/" rel="noopener noreferrer" target="_blank">

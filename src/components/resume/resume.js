@@ -4,7 +4,7 @@ import Experience from './experience';
 import Skills from './skills';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-
+import classes from "./resume.module.scss"
 class Resume extends Component {
     render() {
         return (
@@ -36,7 +36,7 @@ class Resume extends Component {
                         {/*<p>mywebsite.com</p>*/}
                         {/*<hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>*/}
                     </Cell>
-                    <Cell className="resume-right-col" col={8}>
+                    <Cell className={classes.resumeRightCol} col={8}>
                         <h2>Education</h2>
 
                         <Grid>

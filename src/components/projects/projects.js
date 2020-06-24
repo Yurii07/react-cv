@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
-import classes from './projects.module.css'
+import classes from './projects.module.scss'
 
 const cards = [
   {
@@ -115,8 +115,8 @@ class Projects extends Component {
   render() {
     return(
       <div>
-        <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-          <Tab>All</Tab>
+        <Tabs className={classes.tabs} activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
+          <Tab style={{color: '#ffffff'}}>All</Tab>
           <Tab>Latest</Tab>
           <Tab>Front-end</Tab>
           <Tab>React</Tab>
@@ -125,7 +125,7 @@ class Projects extends Component {
           <Grid>
             <Cell col={12}>
               <div className="content">
-                <div className="projects-grid">
+                <div className={classes.projectsGrid}>
                 {this.toggleCategories()}
                 </div>
                 </div>

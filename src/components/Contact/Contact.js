@@ -1,12 +1,12 @@
 import React from 'react';
 import {Grid, Cell, List, ListItem, ListItemContent} from 'react-mdl';
-import classes from './Contact.module.css'
+import classes from './Contact.module.scss'
 
 const Contact = () => {
 
     return (
-        <div className="contact-body">
-            <Grid className="contact-grid">
+        <div className={classes.contactBody}>
+            <Grid className={classes.contactGrid}>
                 <Cell col={5}>
                     <h2 className={classes.Name}>Adamenko Yurii</h2>
                     <img
@@ -17,7 +17,7 @@ const Contact = () => {
                 </Cell>
 
                 <Cell col={7}>
-                    <div className="contact-list">
+                    <div className={classes.contactList}>
                         <List>
                             <ListItem>
                                 <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton'}}>

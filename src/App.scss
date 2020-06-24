@@ -1,129 +1,48 @@
+@import "src/design-tokens/colors";
+
 .header-color {
   /*background: #833ab4;  !* fallback for old browsers *!*/
   /*background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  !* Chrome 10-25, Safari 5.1-6 *!*/
   /*background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
-  background: #000000;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  //background: #000000;  /* fallback for old browsers */
+  //background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  //background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(90deg, $Dolomites-Into-the-Clouds-1-rgba, $Dolomites-Into-the-Clouds-2-rgba);
 }
 
-.landing-grid {
-  /*background: #833ab4;  !* fallback for old browsers *!*/
-  /*background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  !* Chrome 10-25, Safari 5.1-6 *!*/
-  /*background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
-  background: #000000;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* header hover styles */
+.mdl-navigation__link {
+  position: relative;
 
-  text-align: center;
-  position: fixed;
-  top: 64px;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: $Dolomites-Into-the-Clouds-4-rgba;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s;
+  }
+
+  &:hover {
+    background: none;
+
+    &:after {
+      transform-origin: bottom left;
+      transform: scaleX(1);
+    }
+  }
 }
-
-.projects-grid {
-  display: flex;
-}
-
-/* Resume Page css */
-.resume-right-col {
-  background: #27221F;
-  color: white;
-  padding: 2em;
-}
-
-/* Contact page css */
-
-.contact-body {
-  margin: auto;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  padding-top: 2em;
-}
-
-.contact-grid {
-  text-align: center;
-  justify-content: center;
-  width: 80%;
-  height: 550px;
-  background: white;
-  color: black;
-  margin-bottom: 20px;
-}
-
-.contact-grid h2 {
-  font-family: 'Anton', sans-serif;
-}
-
-.contact-grid p {
-  font-family: 'Oxygen', sans-serif;
-  font-weight: bold;
-}
-
-.contact-grid hr {
-  border-top: 5px dotted black;
-  width: 50%;
-  margin: auto;
-}
-
-.contact-list i {
-  font-size: 66px;
-  padding-right: 5rem;
-}
-
-
-/* Contact page css */
 
 .avatar-img {
-  height: 250px;
-  padding-top: 5em;
-}
-
-.banner-text {
-  background-color: rgba(0,0,0,.6);
-  width: 75%;
-  margin: auto;
-  border-radius: 10px;
-}
-
-.banner-text h1 {
-  font-size: 66px;
-  font-weight: bold;
-  color: white;
-}
-
-.banner-text hr {
-  border-top: 5px dotted white;
-  width: 50%;
-  margin: auto;
-}
-
-.banner-text p {
-  color: white;
-  font-size: 20px;
-  padding: 1em;
-}
-
-.social-links {
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-  margin: auto;
-}
-
-.social-links i {
-  color: white;
-  font-size: 5em;
-  padding: 8px;
+  //height: 250px;
+  //padding-top: 5em;
 }
 
 .mdl-layout__header-row .mdl-navigation__link {
-
   font-weight: 600;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -149,6 +68,8 @@
     transform: rotate(360deg);
   }
 }
+
+//resume page
 .vertical-timeline {
   /*color: #000;*/
 }
@@ -159,17 +80,22 @@
   align-items: center;
 }
 
+//resume page
+
 //=============
 .slide-menu {
   color: #ffffff;
 }
+
 .mdl-layout__content {
   //background: #000000;
   //background: linear-gradient(to right, #434343, #000000);
 }
+
 .mdl-layout__drawer {
-  background: rgba(0,0,0,.8);
+  //background: rgba(0,0,0,.8);
 }
+
 .is-visible .mdl-navigation__link {
   animation-name: slideLeft;
   -webkit-animation-name: slideLeft;
@@ -182,22 +108,27 @@
 
   visibility: visible !important;
 }
+
 .is-visible .mdl-navigation__link:nth-child(2) {
   animation-duration: .8s;
   -webkit-animation-duration: .8s;
 }
-.is-visible  .mdl-navigation__link:nth-child(3) {
+
+.is-visible .mdl-navigation__link:nth-child(3) {
   animation-duration: 1s;
   -webkit-animation-duration: 1s;
 }
-.is-visible  .mdl-navigation__link:nth-child(3) {
+
+.is-visible .mdl-navigation__link:nth-child(3) {
   animation-duration: 1.2s;
   -webkit-animation-duration: 1.2s;
 }
-.is-visible  .mdl-navigation__link:nth-child(4) {
+
+.is-visible .mdl-navigation__link:nth-child(4) {
   animation-duration: 1.4s;
   -webkit-animation-duration: 1.4s;
 }
+
 @keyframes slideLeft {
   0% {
     transform: translateX(-150%);
@@ -218,41 +149,18 @@
     transform: translateX(0%);
   }
 }
+
 @media (min-width: 1025px) {
   .mdl-layout__drawer-button {
-   display: none;
+    display: none;
   }
 }
 
 .mdl-layout__drawer .mdl-navigation .mdl-navigation__link:hover {
-  background-color:  unset;
+  background-color: unset;
 }
+
 .mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
   padding-bottom: 5px;
   margin-bottom: 16px;
-}
-/* hover styles */
-.mdl-navigation__link {
-  position: relative;
-
-
-  &:after {
-    content:'';
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    bottom: 0;
-    left: 0;
-    background-color: #E2061B;
-    transform: scaleX(0);
-    transform-origin: bottom right;
-    transition: transform 0.3s;
-  }
-
-  &:hover {background: none;
-    &:after {
-      transform-origin: bottom left;
-      transform: scaleX(1);
-    }
-  }
 }
