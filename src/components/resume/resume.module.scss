@@ -1,8 +1,57 @@
 @import "../../design-tokens/colors";
 
 /* Resume Page css */
+.resumeWrapper {
+  //text-align: center;
+  img {
+    height: 250px;
+  }
+
+  p {
+
+  }
+
+  h2 {
+    //padding-top: 2em;
+  }
+
+  p, h2, h4 {
+    color: #fff;
+  }
+}
+
+.leftSideColumn {
+  text-align: center;
+
+  h2 {
+    padding-top: 2em;
+  }
+
+  h4 {
+    color: grey;
+  }
+  @media (max-width: 768px) {
+    margin: auto;
+    h2 {
+      padding: 0;
+    }
+  }
+}
+
 .resumeRightCol {
-  background: $Dolomites-Into-the-Clouds-1-rgba;
+  background: $Dolomites-Bg-1;
   color: $Dolomites-Into-the-Clouds-0-rgba;
   padding: 2em;
+}
+
+.resumeWrapper hr {
+  border-top: 2px solid $Dolomites-Horizontal-Line;
+}
+
+//.resumeWrapper p,h2,h4{
+//  color: #fff;
+//}
+.vertical-timeline-element-content {
+  //background-color: $Dolomites-Into-the-Clouds-3-rgba;
+  //color: #fff;
 }

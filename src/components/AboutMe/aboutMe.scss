@@ -1,3 +1,5 @@
+@import '../../design-tokens/colors';
+
 $lines-color : fade-out(#fff, .3);
 .wrapper {
     max-width: 400px;
@@ -13,8 +15,8 @@ $lines-color : fade-out(#fff, .3);
     border-radius: 2px;
     box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 0.6);
     overflow: hidden;
-    background: #201c29;
-    color: #fff;
+    background: $Dolomites-Into-the-Clouds-1-rgba;
+    color: $Dolomites-Into-the-Clouds-0-rgba;
     font-family: 'Open Sans', Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -28,7 +30,7 @@ $lines-color : fade-out(#fff, .3);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: linear-gradient(45deg, #ff049f, #9a0fe0 45%);
+    background-image: linear-gradient(33deg, $Dolomites-Into-the-Clouds-5-rgba 25%, $Dolomites-Into-the-Clouds-3-rgba);
     border-radius: 50%;
     animation: circle 1s ease-in-out;
     animation-fill-mode: forwards;
@@ -133,10 +135,10 @@ $lines-color : fade-out(#fff, .3);
     text-align: center;
     font-size: 5rem;
     letter-spacing: 2px;
-    color: #fff;
+    color: $Dolomites-Into-the-Clouds-0-rgba;
     line-height: 50px;
     font-family: "yesteryear", cursive;
-    background-image: linear-gradient(33deg, #9a0fe0 25%, #ff049f);
+    background-image: linear-gradient(33deg, $Dolomites-Into-the-Clouds-5-rgba 25%, $Dolomites-Into-the-Clouds-3-rgba);
     -webkit-text-fill-color: transparent;
     background-clip: text;
     transition: 0.2s ease-in;
@@ -164,7 +166,7 @@ a.contact-here {
     z-index: 7;
     width: 500px;
     height: 150px;
-    background: #201c29;
+    background: $Dolomites-Into-the-Clouds-1-rgba;
     left: 0;
     animation: reveal .4s ease-out 1.7s;
     animation-fill-mode: both;
@@ -197,7 +199,7 @@ a.contact-here {
 .first-letter {
     font-family: yesteryear, cursive;
     font-size: 3.5rem;
-    background-image: linear-gradient(33deg, #9a0fe0 25%, #ff049f);
+    background-image: linear-gradient(33deg, $Dolomites-Into-the-Clouds-5-rgba 25%, $Dolomites-Into-the-Clouds-3-rgba);
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }

@@ -12,11 +12,11 @@ class Landing extends Component {
                 <Grid className={classes.landingGrid}>
                     <ParticlesCanvas/>
                     <Cell col={12}>
-                        <img
-                            src="https://freesvg.org/img/anon-hacker-behind-pc.png"
-                            alt="avatar"
-                            className={classes.landingGridImg}
-                        />
+                        {/*<img*/}
+                        {/*    src="https://freesvg.org/img/anon-hacker-behind-pc.png"*/}
+                        {/*    alt="avatar"*/}
+                        {/*    className={classes.landingGridImg}*/}
+                        {/*/>*/}
 
                         <div className={classes.bannerText}>
                             <h1>React Developer</h1>

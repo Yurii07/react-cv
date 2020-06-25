@@ -5,22 +5,22 @@ import Skills from './skills';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import classes from "./resume.module.scss"
+
 class Resume extends Component {
     render() {
         return (
-            <div>
+            <div className={classes.resumeWrapper}>
 
                 <Grid>
-                    <Cell col={4}>
-                        <div style={{textAlign: 'center'}}>
+                    <Cell col={4} className={classes.leftSideColumn}>
+                        <div >
                             <img
-                                src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/Fred_man-512.png"
+                                src="https://freesvg.org/img/anon-hacker-behind-pc.png"
                                 alt="avatar"
-                                style={{height: '250px'}}
                             />
-                            <h2 style={{paddingTop: '2em'}}>Adamenko Yurii</h2>
-                            <h4 style={{color: 'grey'}}>React Developer</h4>
-                            <hr style={{borderTop: '2px solid rgb(226, 41, 71)'}}/>
+                            <h2 >Adamenko Yurii</h2>
+                            <h4 >React Developer</h4>
+                            <hr />
                             <p>Main goal to get the position of «React.js developer» with opportunities for
                                 professional and personal growth.</p>
                         </div>
@@ -49,7 +49,7 @@ class Resume extends Component {
                             </Cell>
                         </Grid>
 
-                        <hr style={{borderTop: '2px solid #e22947'}}/>
+                        <hr />
 
                         <h2>Work Experience</h2>
 
@@ -142,7 +142,7 @@ class Resume extends Component {
 
                         </VerticalTimeline>
 
-                        <hr style={{borderTop: '3px solid #e22947'}}/>
+                        <hr />
                         <h2>Skills</h2>
 
                         <Skills

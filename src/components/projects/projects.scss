@@ -1,0 +1,21 @@
+@import "../../design-tokens/colors";
+
+.projectWrapper {
+
+}
+.projectsGrid {
+    display: flex
+}
+.tabs{
+    color: #fff;
+}
+.mdl-tabs__tab .mdl-tabs__ripple-container .mdl-ripple {
+    background: $Dolomites-Into-the-Clouds-3-rgba;
+}
+.demo-tabs .mdl-tabs__tab-bar .mdl-tabs__tab.is-active {
+    //color: $Dolomites-Into-the-Clouds-3-rgba;
+    color: #fff;
+}
+.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after {
+    background: $Dolomites-Into-the-Clouds-3-rgba;
+}
