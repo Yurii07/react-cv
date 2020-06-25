@@ -8,6 +8,9 @@ import classes from "./resume.module.scss"
 
 class Resume extends Component {
     render() {
+        const timelineElement = {
+            background: 'rgba(191,109,80, 1)'
+        }
         return (
             <div className={classes.resumeWrapper}>
 
@@ -55,9 +58,8 @@ class Resume extends Component {
 
                         <VerticalTimeline>
                             <VerticalTimelineElement
-                                className="vertical-timeline-element--work"
-                                contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                                contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+                                contentStyle={timelineElement}
+                                contentArrowStyle={{ borderRight: '7px solid  rgba(191,109,80, 1)' }}
                                 date="1.10.19 - present"
                                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                                 icon={<i className="fa fa-briefcase fa-2x" />}
