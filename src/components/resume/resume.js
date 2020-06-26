@@ -9,7 +9,14 @@ import classes from "./resume.module.scss"
 class Resume extends Component {
     render() {
         const timelineElement = {
-            background: 'rgba(191,109,80, 1)'
+            background: 'rgba(25,32,38, .9)',
+            boxShadow: '0 3px 0 rgba(191,109,80, 1)',
+            arrowStyle: {
+                borderRight: '7px solid  rgba(191,109,80, 1)'
+            },
+            iconStyle: {
+                background: 'rgba(25,32,38, 1)', color: 'rgba(191,109,80, 1)'
+            }
         }
         return (
             <div className={classes.resumeWrapper}>
@@ -27,17 +34,6 @@ class Resume extends Component {
                             <p>Main goal to get the position of «React.js developer» with opportunities for
                                 professional and personal growth.</p>
                         </div>
-
-
-                        {/*<hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>*/}
-
-                        {/*<h5>Phone</h5>*/}
-                        {/*<p>(063) 153-0212</p>*/}
-                        {/*<h5>Email</h5>*/}
-                        {/*<p>skyey07@gmail.com</p>*/}
-                        {/*<h5>Web</h5>*/}
-                        {/*<p>mywebsite.com</p>*/}
-                        {/*<hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>*/}
                     </Cell>
                     <Cell className={classes.resumeRightCol} col={8}>
                         <h2>Education</h2>
@@ -56,18 +52,19 @@ class Resume extends Component {
 
                         <h2>Work Experience</h2>
 
-                        <VerticalTimeline>
+                        <VerticalTimeline >
                             <VerticalTimelineElement
+
                                 contentStyle={timelineElement}
-                                contentArrowStyle={{ borderRight: '7px solid  rgba(191,109,80, 1)' }}
+                                contentArrowStyle={timelineElement.arrowStyle}
                                 date="1.10.19 - present"
-                                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                                iconStyle={timelineElement.iconStyle}
                                 icon={<i className="fa fa-briefcase fa-2x" />}
                             >
-                                <h3 className="vertical-timeline-element-title">Web Developer</h3>
-                                <h4 className="vertical-timeline-element-subtitle">Nimble company</h4>
+                                <h3 className="vertical-timeline-element-title" style={{color: 'rgba(191,109,80, 1)'}}>Web Developer</h3>
+                                <h4 className="vertical-timeline-element-subtitle" style={{color: 'rgba(242,134,72, 1)'}}>Nimble company</h4>
                                 <div>
-                                    Description
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.
                                     <Experience
                                         html='HTML5, '
                                         css='CSS3( Sass / Scss), '
