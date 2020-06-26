@@ -1,10 +1,9 @@
 @import "../../design-tokens/colors";
 
-/* Resume Page css */
 .resumeWrapper {
-  //text-align: center;
+
   img {
-    height: 250px;
+    height: 150px;
   }
 
   p {
@@ -23,13 +22,24 @@
 .leftSideColumn {
   text-align: center;
 
+  .wrapper {
+    background: rgba(25, 32, 38, 0.8);
+    padding: 2em;
+  }
+
   h2 {
-    padding-top: 2em;
+    //padding-top: 2em;
+    //background-image: linear-gradient(33deg, $Dolomites-Into-the-Clouds-5-rgba 25%, $Dolomites-Into-the-Clouds-3-rgba);
+    //-webkit-text-fill-color: transparent;
+    //background-clip: text;
   }
 
   h4 {
-    color: grey;
+    background-image: linear-gradient(33deg, $Dolomites-Into-the-Clouds-5-rgba 25%, $Dolomites-Into-the-Clouds-3-rgba);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
+
   @media (max-width: 768px) {
     margin: auto;
     h2 {
@@ -46,12 +56,4 @@
 
 .resumeWrapper hr {
   border-top: 2px solid $Dolomites-Horizontal-Line;
-}
-
-//.resumeWrapper p,h2,h4{
-//  color: #fff;
-//}
-.vertical-timeline-element-content {
-  //background-color: $Dolomites-Into-the-Clouds-3-rgba;
-  //color: #fff;
 }

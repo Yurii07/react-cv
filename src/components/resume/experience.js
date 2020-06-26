@@ -6,25 +6,32 @@ import Icon from 'react-mdl/lib/Icon';
 class Experience extends React.Component {
 
     state = {
-        on: false
+        open: false
     }
     toggle = () => {
         this.setState({
-            on:!this.state.on
+            open: !this.state.open
         })
     }
 
     render() {
     return(
       <Grid>
-        <Cell col={12} >
-            {this.state.on ? <Icon name='keyboard_arrow_up'></Icon> :<Icon name='keyboard_arrow_down'></Icon>}
+        <Cell col={12} style={{display: 'flex'}}>
+            {
+                this.state.open
+                ? <Icon name='keyboard_arrow_up'></Icon>
+                : <Icon name='keyboard_arrow_down'></Icon>
+            }
 
             <Collapsible
-                onCklick={()=>this.toggle}
-                // handleTriggerClick ={this.toggle}
                 trigger={'Technology'}
-                         triggerStyle={{color:'rgba(242,134,72, 1)',cursor: 'pointer'}}>
+                triggerStyle={{color:'rgba(242,134,72, 1)',cursor: 'pointer'}}
+                lazyRender={true}
+                onTriggerOpening={this.toggle}
+                onTriggerClosing={this.toggle}
+                         >
+
                 <span>{this.props.css}</span>
                 <span>{this.props.html}</span>
                 <span>{this.props.flexbox}</span>

@@ -7,7 +7,7 @@ import './App.scss';
 
 class App extends Component {
     state = {
-        loading: false
+        loading: true
     };
 
     componentDidMount() {
