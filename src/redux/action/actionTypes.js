@@ -1,0 +1,1 @@
+export const TOGGLE_TAB_ID = 'TOGGLE_ACTIVE_TAB'
