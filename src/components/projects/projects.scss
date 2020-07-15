@@ -4,7 +4,10 @@
 
 }
 .projectsGrid {
-    display: flex
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
 }
 .tabs{
     color: #fff;

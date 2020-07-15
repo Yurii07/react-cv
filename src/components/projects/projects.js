@@ -5,59 +5,6 @@ import {connect} from 'react-redux'
 import Icon from "react-mdl/lib/Icon";
 import {onToggleTabId} from "../../redux/action/actions";
 
-const cards = [
-  {
-    name: 'ALL',
-    id: 0,
-    urlImage: 'https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg',
-    title: 'Project',
-    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s',
-    github: '',
-    codepen: '',
-    livedemo: ''
-  },
-  {
-    name: 'LATEST',
-    id: 1,
-    urlImage: 'https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg',
-    title: 'Project',
-    text: 'lorem lorem',
-    github: '',
-    codepen: '',
-    livedemo: ''
-  },
-  {
-    name: 'FRONTEND',
-    id: 2,
-    urlImage: 'https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg',
-    title: 'Project',
-    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s',
-    github: '',
-    codepen: '',
-    livedemo: ''
-  },
-  {
-    name: 'REACT',
-    id: 3,
-    urlImage: 'https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg',
-    title: 'Project',
-    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s',
-    github: '',
-    codepen: '',
-    livedemo: ''
-  },
-  {
-    name: 'JS',
-    id: 4,
-    urlImage: 'https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg',
-    title: 'Project',
-    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s',
-    github: '',
-    codepen: '',
-    livedemo: ''
-  }
-];
-
 
 class Projects extends Component {
   // constructor(props) {
@@ -171,15 +118,18 @@ class Projects extends Component {
                           <CardTitle style={{
                             color: '#fff',
                             height: '176px',
-                            background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'
-                          }}>{filteredCard.title} {filteredCard.id}</CardTitle>
+                            // background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'
+                            background: `url(${filteredCard.urlImage}) center / cover`
+                          }}>
+                            {filteredCard.title}
+                          </CardTitle>
                           <CardText>
-                            {filteredCard.name}
+                            {filteredCard.text}
                           </CardText>
                           <CardActions border>
                             <Button colored>GitHub</Button>
                             <Button colored>CodePen</Button>
-                            <Button colored>Live Demo</Button>
+                            <Button colored onClick={event =>  window.location.href=`${filteredCard.urlProject}`}>Live Demo</Button>
                           </CardActions>
                           <CardMenu style={{color: '#fff'}}>
                             <IconButton name="share"/>
