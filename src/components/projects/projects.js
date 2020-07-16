@@ -7,96 +7,20 @@ import {onToggleTabId} from "../../redux/action/actions";
 
 
 class Projects extends Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = { activeTab: 0 };
-  // }
-
-  // filterCards () {}
-
-  toggleCategories() {
-
-    // const filterCards = cards.filter(card => card.id === this.state.activeTab).map(filteredCard => (
-    //
-    // <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-    //   <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >{filteredCard.title} {filteredCard.id}</CardTitle>
-    //   <CardText>
-    //     {filteredCard.text}
-    //   </CardText>
-    //   <CardActions border>
-    //     <Button colored>GitHub</Button>
-    //     <Button colored>CodePen</Button>
-    //     <Button colored>Live Demo</Button>
-    //   </CardActions>
-    //   <CardMenu style={{color: '#fff'}}>
-    //     <IconButton name="share" />
-    //   </CardMenu>
-    // </Card>
-    // ))
-
-    // if(this.state.activeTab === 0){
-    //   return(
-    //       filterCards
-    //   )
-    // } else if(this.state.activeTab === 1) {
-    //   return (
-    //       filterCards
-    //   )
-    // } else if(this.state.activeTab === 2) {
-    //   return (
-    //     filterCards
-    //   )
-    // } else if(this.state.activeTab === 3) {
-    //   return (
-    //     filterCards
-    //   )
-    // }
-    // else if(this.state.activeTab === 4) {
-    //   return (
-    //       filterCards
-    //   )
-    // }
-
-  }
-
-
 
   handleClick = tabId => {
     console.log(tabId);
     this.props.onToggleActive(tabId);
-
-    // this.props.cards.filter(card => card.idTab === e).map(filteredCard => (
-    //
-    // <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-    //   <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >{filteredCard.title} {filteredCard.id}</CardTitle>
-    //   <CardText>
-    //     {filteredCard.name}
-    //   </CardText>
-    //   <CardActions border>
-    //     <Button colored>GitHub</Button>
-    //     <Button colored>CodePen</Button>
-    //     <Button colored>Live Demo</Button>
-    //   </CardActions>
-    //   <CardMenu style={{color: '#fff'}}>
-    //     <IconButton name="share" />
-    //   </CardMenu>
-    // </Card>
-    //
-    //
-    // ))
   }
 
-
   render() {
-    console.log('project', this.props);
+    // console.log('project', this.props);
 
     return (
         <div className="demo-tabs">
           <Tabs
               activeTab={this.props.activeTab}
-              // onChange={(tabId) => this.setState({ activeTab: tabId })}
               onChange={(tabId) => this.handleClick( tabId)}
-              // onChange={this.handleClick}
               ripple>
             <Tab className='tabs'>All</Tab>
             <Tab className='tabs'>Latest</Tab>
@@ -108,17 +32,12 @@ class Projects extends Component {
             <Cell col={12}>
               <div className="content">
                 <div className='projectsGrid'>
-                  {/*{this.toggleCategories()}*/}
-                  {/*  {this.props.activeTab}*/}
-                  {/*{this.handleClick}*/}
+
                   {
                     this.props.cards.filter(card => card.idTab === this.props.activeTab).map(filteredCard => (
 
-                        <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                        <Card shadow={5} style={{minWidth: '450', margin: '5px auto'}}>
                           <CardTitle style={{
-                            color: '#fff',
-                            height: '176px',
-                            // background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'
                             background: `url(${filteredCard.urlImage}) center / cover`
                           }}>
                             {filteredCard.title}
@@ -127,8 +46,8 @@ class Projects extends Component {
                             {filteredCard.text}
                           </CardText>
                           <CardActions border>
-                            <Button colored>GitHub</Button>
-                            <Button colored>CodePen</Button>
+                            <Button colored disabled>GitHub</Button>
+                            <Button colored disabled>CodePen</Button>
                             <Button colored onClick={event =>  window.location.href=`${filteredCard.urlProject}`}>Live Demo</Button>
                           </CardActions>
                           <CardMenu style={{color: '#fff'}}>
