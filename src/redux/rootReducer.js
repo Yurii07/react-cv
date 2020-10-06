@@ -12,6 +12,7 @@ import {
     project10,
     project11,
     project12,
+    project13,
 } from "../components/images";
 
 const initialState = {
@@ -120,6 +121,14 @@ const initialState = {
             title: 'api',
             text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s',
             urlProject: 'https://yurii07.github.io/api/',
+        },
+        {
+            name: 'REACT',
+            idTab: 3,
+            urlImage: project13,
+            title: 'Movie App',
+            text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s',
+            urlProject: 'https://yurii07.github.io/movie-app/',
         }
     ]
 }
