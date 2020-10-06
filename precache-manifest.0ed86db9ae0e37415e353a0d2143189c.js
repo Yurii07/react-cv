@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5661d01415cca65b9cd628875c920b0e",
+    "revision": "912b8f46d6e7c7ed5d3a6a1a232eb821",
     "url": "/react-cv/index.html"
   },
   {
-    "revision": "7b47edb1c7b8eaa3fe46",
-    "url": "/react-cv/static/css/2.b09d5d9e.chunk.css"
+    "revision": "ea04a0404c16900244c4",
+    "url": "/react-cv/static/css/2.f47cdb75.chunk.css"
   },
   {
-    "revision": "7d901f29d611f387eefb",
-    "url": "/react-cv/static/css/main.7c0abdb0.chunk.css"
+    "revision": "35ef7223537741fe2082",
+    "url": "/react-cv/static/css/main.92a9aa53.chunk.css"
   },
   {
-    "revision": "7b47edb1c7b8eaa3fe46",
-    "url": "/react-cv/static/js/2.ca333768.chunk.js"
+    "revision": "ea04a0404c16900244c4",
+    "url": "/react-cv/static/js/2.eefe3403.chunk.js"
   },
   {
     "revision": "e078d673834ef0c088fe44bab9fcc203",
-    "url": "/react-cv/static/js/2.ca333768.chunk.js.LICENSE.txt"
+    "url": "/react-cv/static/js/2.eefe3403.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7d901f29d611f387eefb",
-    "url": "/react-cv/static/js/main.bce46aa1.chunk.js"
+    "revision": "35ef7223537741fe2082",
+    "url": "/react-cv/static/js/main.34a82092.chunk.js"
   },
   {
-    "revision": "2df592bb566954d414a2",
-    "url": "/react-cv/static/js/runtime-main.64145a43.js"
+    "revision": "34344c68a4095068861c",
+    "url": "/react-cv/static/js/runtime-main.fa5fbbb8.js"
   },
   {
     "revision": "95e0aae0c91df7a9071bc83dbe0a64cb",
@@ -50,6 +50,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "92e7041db18a2f32a4e83b5e3a32e34b",
     "url": "/react-cv/static/media/goodInc.92e7041d.png"
+  },
+  {
+    "revision": "59cbbcff7368b2344a60d1ab5c3a500e",
+    "url": "/react-cv/static/media/movie-app.59cbbcff.png"
   },
   {
     "revision": "c1342ccdec1d577bbe57cbdd3b8f6638",
