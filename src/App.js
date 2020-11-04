@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {Layout, Header, Navigation, Drawer, Content} from 'react-mdl';
 import Routes from './components/main/Routes';
 import {BrowserRouter as Router, Link} from 'react-router-dom';
-
 import './App.scss';
 
 class App extends Component {
@@ -22,9 +21,7 @@ class App extends Component {
         }
         return (
             <div className="demo-big-content">
-
-
-                <Layout style={{background: 'url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/628ee694632087.5e83b47a88717.jpg) center / cover'}}>
+                <Layout className="layoutBg" >
                     <Router basename={process.env.PUBLIC_URL}>
                         <Header className="header-color" title={<Link style={{
                             textDecoration: 'none', color: 'white', fontWeight: 600,
@@ -64,10 +61,12 @@ class App extends Component {
                                 <Link to="/contact" className="slide-menu" style={{color: 'white'}}>Contact</Link>
                             </Navigation>
                         </Drawer>
+
                         <Content>
                             <div className="page-content"/>
                             <Routes/>
                         </Content>
+
                     </Router>
                 </Layout>
             </div>

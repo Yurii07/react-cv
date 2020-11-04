@@ -1,5 +1,10 @@
 @import "src/design-tokens/colors";
 
+.mdl-layout__inner-container{
+  background-image: url("./images/layoutBg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 .header-color {
   /*background: #833ab4;  !* fallback for old browsers *!*/
   /*background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  !* Chrome 10-25, Safari 5.1-6 *!*/

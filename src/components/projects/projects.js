@@ -1,10 +1,7 @@
 import React, {Component} from 'react';
 import {Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton} from 'react-mdl';
-import classes from './projects.scss'
 import {connect} from 'react-redux'
-import Icon from "react-mdl/lib/Icon";
 import {onToggleTabId} from "../../redux/action/actions";
-
 
 class Projects extends Component {
 
@@ -32,7 +29,6 @@ class Projects extends Component {
             <Cell col={12}>
               <div className="content">
                 <div className='projectsGrid'>
-
                   {
                     this.props.cards.filter(card => card.idTab === this.props.activeTab).map(filteredCard => (
 

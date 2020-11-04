@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Cell, ProgressBar } from 'react-mdl';
-import classes from './resume.module.scss';
+import { Grid, Cell} from 'react-mdl';
 import {Line} from "rc-progress";
 
 class Skills extends Component {
@@ -12,7 +11,7 @@ class Skills extends Component {
         };
     }
   render() {
-      const { percent, color } = this.state;
+      const {  color } = this.state;
       const containerStyle = {
           width: '100%',
       };
