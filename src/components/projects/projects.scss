@@ -1,6 +1,6 @@
 @import "../../design-tokens/colors";
 
-.projectsGrid {
+.projects-grid {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -8,7 +8,7 @@
 }
 
 .tabs {
-  color: $Dolomites-Into-the-Clouds-0-rgba;
+  color: $Dolomites-Into-the-Clouds-1-rgba;
 }
 
 .mdl-tabs__tab .mdl-tabs__ripple-container .mdl-ripple {
@@ -25,6 +25,13 @@
 }
 
 .mdl-card__title {
-  color: $Dolomites-Into-the-Clouds-0-rgba;
+  color: $Dolomites-Into-the-Clouds-3-rgba;
   height: 176px;
+  padding: 0;
+}
+.mdl-card__title-text{
+  padding: 10px 15px;
+  background: rgba(0,0,0,.5);
+  display: flex;
+  width: 100%;
 }
