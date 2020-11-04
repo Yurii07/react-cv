@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/react-cv/static/css/main.43b8f711.chunk.css",
-    "main.js": "/react-cv/static/js/main.e58832d8.chunk.js",
-    "main.js.map": "/react-cv/static/js/main.e58832d8.chunk.js.map",
+    "main.css": "/react-cv/static/css/main.7be2ee7b.chunk.css",
+    "main.js": "/react-cv/static/js/main.a2736929.chunk.js",
+    "main.js.map": "/react-cv/static/js/main.a2736929.chunk.js.map",
     "runtime-main.js": "/react-cv/static/js/runtime-main.fa5fbbb8.js",
     "runtime-main.js.map": "/react-cv/static/js/runtime-main.fa5fbbb8.js.map",
     "static/css/2.b51d1bf2.chunk.css": "/react-cv/static/css/2.b51d1bf2.chunk.css",
-    "static/js/2.35f00636.chunk.js": "/react-cv/static/js/2.35f00636.chunk.js",
-    "static/js/2.35f00636.chunk.js.map": "/react-cv/static/js/2.35f00636.chunk.js.map",
+    "static/js/2.152eb919.chunk.js": "/react-cv/static/js/2.152eb919.chunk.js",
+    "static/js/2.152eb919.chunk.js.map": "/react-cv/static/js/2.152eb919.chunk.js.map",
     "index.html": "/react-cv/index.html",
-    "precache-manifest.4aefda3f72672d4a81a3d0006546df86.js": "/react-cv/precache-manifest.4aefda3f72672d4a81a3d0006546df86.js",
+    "precache-manifest.355027281abc29fa89355c9e85e2e22a.js": "/react-cv/precache-manifest.355027281abc29fa89355c9e85e2e22a.js",
     "service-worker.js": "/react-cv/service-worker.js",
     "static/css/2.b51d1bf2.chunk.css.map": "/react-cv/static/css/2.b51d1bf2.chunk.css.map",
-    "static/css/main.43b8f711.chunk.css.map": "/react-cv/static/css/main.43b8f711.chunk.css.map",
-    "static/js/2.35f00636.chunk.js.LICENSE.txt": "/react-cv/static/js/2.35f00636.chunk.js.LICENSE.txt",
+    "static/css/main.7be2ee7b.chunk.css.map": "/react-cv/static/css/main.7be2ee7b.chunk.css.map",
+    "static/js/2.152eb919.chunk.js.LICENSE.txt": "/react-cv/static/js/2.152eb919.chunk.js.LICENSE.txt",
     "static/media/api.JPG": "/react-cv/static/media/api.95e0aae0.JPG",
     "static/media/bitcoin_bg.jpg": "/react-cv/static/media/bitcoin_bg.3ac4c5b4.jpg",
     "static/media/curriculum-vitae.png": "/react-cv/static/media/curriculum-vitae.b47c6e71.png",
@@ -21,6 +21,7 @@
     "static/media/game.png": "/react-cv/static/media/game.2a481d9f.png",
     "static/media/goodInc.png": "/react-cv/static/media/goodInc.92e7041d.png",
     "static/media/App.scss": "/react-cv/static/media/layoutBg.23dfc25f.jpg",
+    "static/media/millionaire.jpg": "/react-cv/static/media/millionaire.1cd6aa6c.jpg",
     "static/media/movie-app.png": "/react-cv/static/media/movie-app.59cbbcff.png",
     "static/media/nois-wallpaper-abstract.jpg": "/react-cv/static/media/nois-wallpaper-abstract.c1342ccd.jpg",
     "static/media/react-weather.png": "/react-cv/static/media/react-weather.f19790b8.png",
@@ -31,8 +32,8 @@
   "entrypoints": [
     "static/js/runtime-main.fa5fbbb8.js",
     "static/css/2.b51d1bf2.chunk.css",
-    "static/js/2.35f00636.chunk.js",
-    "static/css/main.43b8f711.chunk.css",
-    "static/js/main.e58832d8.chunk.js"
+    "static/js/2.152eb919.chunk.js",
+    "static/css/main.7be2ee7b.chunk.css",
+    "static/js/main.a2736929.chunk.js"
   ]
 }
