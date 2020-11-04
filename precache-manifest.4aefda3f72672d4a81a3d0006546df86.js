@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "912b8f46d6e7c7ed5d3a6a1a232eb821",
+    "revision": "719932ee9003f4ac55ca684eeb5d95be",
     "url": "/react-cv/index.html"
   },
   {
-    "revision": "ea04a0404c16900244c4",
-    "url": "/react-cv/static/css/2.f47cdb75.chunk.css"
+    "revision": "563f44b574608f8af156",
+    "url": "/react-cv/static/css/2.b51d1bf2.chunk.css"
   },
   {
-    "revision": "35ef7223537741fe2082",
-    "url": "/react-cv/static/css/main.92a9aa53.chunk.css"
+    "revision": "868576fc51f3ca79a4d9",
+    "url": "/react-cv/static/css/main.43b8f711.chunk.css"
   },
   {
-    "revision": "ea04a0404c16900244c4",
-    "url": "/react-cv/static/js/2.eefe3403.chunk.js"
+    "revision": "563f44b574608f8af156",
+    "url": "/react-cv/static/js/2.35f00636.chunk.js"
   },
   {
     "revision": "e078d673834ef0c088fe44bab9fcc203",
-    "url": "/react-cv/static/js/2.eefe3403.chunk.js.LICENSE.txt"
+    "url": "/react-cv/static/js/2.35f00636.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "35ef7223537741fe2082",
-    "url": "/react-cv/static/js/main.34a82092.chunk.js"
+    "revision": "868576fc51f3ca79a4d9",
+    "url": "/react-cv/static/js/main.e58832d8.chunk.js"
   },
   {
     "revision": "34344c68a4095068861c",
@@ -50,6 +50,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "92e7041db18a2f32a4e83b5e3a32e34b",
     "url": "/react-cv/static/media/goodInc.92e7041d.png"
+  },
+  {
+    "revision": "23dfc25f51c86b2894e154582398446a",
+    "url": "/react-cv/static/media/layoutBg.23dfc25f.jpg"
   },
   {
     "revision": "59cbbcff7368b2344a60d1ab5c3a500e",
