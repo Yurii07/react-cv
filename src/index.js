@@ -11,16 +11,16 @@ import {Provider} from 'react-redux';
 import rootReducer from "./redux/rootReducer";
 
 function loggerMiddleware(store) {
-return function (next) {
-return function (action) {
-const result = next(action)
-    console.log('middleware', store.getState());
-    return result
-}
-}
+    return function (next) {
+        return function (action) {
+            const result = next(action)
+            console.log('middleware', store.getState());
+            return result
+        }
+    }
 }
 
-const store = createStore(rootReducer,applyMiddleware(loggerMiddleware));
+const store = createStore(rootReducer, applyMiddleware(loggerMiddleware));
 
 const app = (
     <Provider store={store}>
@@ -30,6 +30,4 @@ const app = (
     </Provider>
 )
 
-ReactDOM.render(
-    app
-    , document.getElementById('root'));
+ReactDOM.render(app, document.getElementById('root'));

@@ -12,7 +12,7 @@ const Contact = () => {
                     <img
                         src="https://freesvg.org/img/anon-hacker-behind-pc.png"
                         alt="avatar"
-                        style={{height: '250px'}}
+                        className={classes.ContactImg}
                     />
                 </Cell>
 
@@ -20,30 +20,30 @@ const Contact = () => {
                     <div className={classes.contactList}>
                         <List>
                             <ListItem>
-                                <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton',color: '#ffffff'}}>
+                                <ListItemContent className={classes.ListItemContent}>
                                     <i className="fa fa-phone-square" aria-hidden="true"/>
-                                    (063) 153-0212
+                                    (063) 153-02-12
                                 </ListItemContent>
                             </ListItem>
 
                             <ListItem>
-                                <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton',color: '#ffffff'}}>
+                                <ListItemContent className={classes.ListItemContent}>
                                     <i className="fa fa-envelope" aria-hidden="true"/>
                                     skyey07@gmail.com
                                 </ListItemContent>
                             </ListItem>
 
                             <ListItem>
-                                <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton',color: '#ffffff'}}>
+                                <ListItemContent className={classes.ListItemContent}>
                                     <i className="fa fa-skype" aria-hidden="true"/>
                                     live:skyey07
                                 </ListItemContent>
                             </ListItem>
 
                             <ListItem>
-                                <ListItemContent style={{fontSize: '30px', fontFamily: 'Anton',color: '#ffffff'}}>
+                                <ListItemContent className={classes.ListItemContent}>
                                     <i className="fa fa-telegram" aria-hidden="true"/>
-                                    AdamenkoYurii
+                                    @AdamenkoYurii
                                 </ListItemContent>
                             </ListItem>
 
@@ -56,12 +56,12 @@ const Contact = () => {
                     <h3>Contact me today !</h3>
                     <hr/>
 
-                    <div style={{width: '75%', margin: 'auto', paddingTop: '1em'}}>
+                    <div className={classes.ContactLinks}>
                         <p>Drop me a line at<br/>
-                        <a className={classes.contactLinks} href={`mailto:skyey07@gmail.com`}>skyey07@gmail.com</a>
+                            <a className={classes.contactLinks} href={`mailto:skyey07@gmail.com`}>skyey07@gmail.com</a>
                         </p>
                         <p>or call me at<br/>
-                        <a className={classes.contactLinks} href={`tel:+380631530212`}>+380631530212</a>
+                            <a className={classes.contactLinks} href={`tel:+380631530212`}>+380631530212</a>
                         </p>
                     </div>
 

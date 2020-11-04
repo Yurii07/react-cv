@@ -1,82 +1,55 @@
-import React, {Component} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Layout, Header, Navigation, Drawer, Content} from 'react-mdl';
 import Routes from './components/main/Routes';
 import {BrowserRouter as Router, Link} from 'react-router-dom';
 import './App.scss';
 
-class App extends Component {
-    state = {
-        loading: true
-    };
+const App = () => {
+    const [loading, setLoading] = useState(true)
 
-    componentDidMount() {
-        // this simulates an async action, after which the component will render the content
-        demoAsyncCall().then(() => this.setState({loading: false}));
-    }
+    useEffect(() => {
+        setTimeout(() => setLoading(false), 3000)
+    }, [])
 
-    render() {
-        const {loading} = this.state;
-        if (loading) { // if your component doesn't have to wait for an async action, remove this block
-            return null; // render null when app is not ready
-        }
-        return (
-            <div className="demo-big-content">
-                <Layout className="layoutBg" >
-                    <Router basename={process.env.PUBLIC_URL}>
-                        <Header className="header-color" title={<Link style={{
-                            textDecoration: 'none', color: 'white', fontWeight: 600,
-                            letterSpacing: 3,
-                        }} to="/">MyPortfolio</Link>} scroll>
-                            <Navigation>
-                                <Link to="/resume">Resume</Link>
-                                <Link to="/aboutme">About Me</Link>
-                                <Link to="/projects">Projects</Link>
-                                <Link to="/contact">Contact</Link>
-                            </Navigation>
-                        </Header>
-                        {/*mobile menu*/}
-                        <Drawer style={{
-                            background: 'rgba(0, 0, 0, 0.7)', transitionDuration: '1s', display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            height: '100%'
-                        }}
-                                title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">
+    return (
+        <div className="demo-big-content">
+            <Layout className="layoutBg ">
+                <Router basename={process.env.PUBLIC_URL}>
+                    <Header className="header"
+                            title={<Link to="/">MyPortfolio</Link>} scroll>
+                        <Navigation>
+                            <Link to="/resume">Resume</Link>
+                            <Link to="/aboutme">About Me</Link>
+                            <Link to="/projects">Projects</Link>
+                            <Link to="/contact">Contact</Link>
+                        </Navigation>
+                    </Header>
+                    {/*mobile menu*/}
+                    <Drawer className="drawer-wrapper"
+                            title={<Link to="/">
+                                <img src="https://freesvg.org/img/anon-hacker-behind-pc.png"
+                                     alt="avatar"/>
+                                <h2>Yurii A.</h2>
+                            </Link>}>
+                        <Navigation >
+                            <Link to="/resume" className="slide-menu ">Resume</Link>
+                            <Link to="/aboutme" className="slide-menu">About Me</Link>
+                            <Link to="/projects" className="slide-menu">Projects</Link>
+                            <Link to="/contact" className="slide-menu">Contact</Link>
+                        </Navigation>
+                    </Drawer>
 
-                                    <img src="https://freesvg.org/img/anon-hacker-behind-pc.png"
-                                         alt="avatar"
-                                         style={{
-                                             width: '100%',
-                                             height: 'auto',
-                                             maxWidth: '100px',
-                                             margin: 'auto',
-                                             display: 'flex'
-                                         }}/>
-                                    <h2>Yurii A.</h2>
-                                </Link>}>
-                            <Navigation>
-                                <Link to="/resume" className="slide-menu " style={{color: 'white'}}>Resume</Link>
-                                <Link to="/aboutme" className="slide-menu" style={{color: 'white'}}>About Me</Link>
-                                <Link to="/projects" className="slide-menu" style={{color: 'white'}}>Projects</Link>
-                                <Link to="/contact" className="slide-menu" style={{color: 'white'}}>Contact</Link>
-                            </Navigation>
-                        </Drawer>
-
-                        <Content>
-                            <div className="page-content"/>
-                            <Routes/>
-                        </Content>
-
-                    </Router>
-                </Layout>
-            </div>
-
-        );
-    }
-}
-
-const demoAsyncCall = () => {
-    return new Promise((resolve) => setTimeout(() => resolve()));
+                    <Content>
+                        <div className="page-content "/>
+                        {!loading
+                            ? <Routes/>
+                            : <div className='loader'/>
+                        }
+                    </Content>
+                </Router>
+            </Layout>
+        </div>
+    );
 }
 
 export default App;

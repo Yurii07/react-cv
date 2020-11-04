@@ -1,10 +1,8 @@
 import React from 'react';
-
 import './aboutMe.scss'
 import {Link} from "react-router-dom";
 
 const AboutMe = () => {
-
     return (
             <div className="wrapper">
                 <div className="frame">

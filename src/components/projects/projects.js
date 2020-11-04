@@ -11,15 +11,13 @@ class Projects extends Component {
   }
 
   render() {
-    // console.log('project', this.props);
-
     return (
         <div className="demo-tabs">
           <Tabs
               activeTab={this.props.activeTab}
               onChange={(tabId) => this.handleClick( tabId)}
               ripple>
-            <Tab className='tabs'>All</Tab>
+            <Tab className='tabs' >All</Tab>
             <Tab className='tabs'>Latest</Tab>
             <Tab className='tabs'>Front-end</Tab>
             <Tab className='tabs'>React</Tab>

@@ -1,11 +1,12 @@
 @import "src/design-tokens/colors";
 
-.mdl-layout__inner-container{
+.mdl-layout__content{
   background-image: url("./images/layoutBg.jpg");
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: cover;
 }
-.header-color {
+.header {
   /*background: #833ab4;  !* fallback for old browsers *!*/
   /*background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  !* Chrome 10-25, Safari 5.1-6 *!*/
   /*background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
@@ -13,6 +14,12 @@
   //background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
   //background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: linear-gradient(90deg, $Dolomites-Into-the-Clouds-1-rgba, $Dolomites-Into-the-Clouds-2-rgba);
+a{
+  text-decoration: none;
+  color:white;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
 }
 
 /* header hover styles */
@@ -38,6 +45,26 @@
     &:after {
       transform-origin: bottom left;
       transform: scaleX(1);
+    }
+  }
+}
+
+.drawer-wrapper {
+  background: rgba(0, 0, 0, 0.7);
+  transition-duration: 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  a{
+    text-decoration: none;
+    color: white;
+    img{
+      width: 100%;
+      height: auto;
+      max-width: 100px;
+      margin: auto;
+      display: flex;
     }
   }
 }
@@ -77,32 +104,16 @@
   }
 }
 
-//resume page
-.vertical-timeline {
-  /*color: #000;*/
-}
-
 .vertical-timeline-element-icon {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-//resume page
-
-//=============
-.slide-menu {
-  color: #ffffff;
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link{
+  color: white;
 }
 
-.mdl-layout__content {
-  //background: #000000;
-  //background: linear-gradient(to right, #434343, #000000);
-}
-
-.mdl-layout__drawer {
-  //background: rgba(0,0,0,.8);
-}
 
 .is-visible .mdl-navigation__link {
   animation-name: slideLeft;

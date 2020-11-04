@@ -1,5 +1,6 @@
 @import "../../design-tokens/colors";
-.Name{
+
+.Name {
   color: $Dolomites-Into-the-Clouds-0-rgba;
   background-image: linear-gradient(33deg, $Dolomites-Into-the-Clouds-5-rgba 25%, $Dolomites-Into-the-Clouds-3-rgba);
   -webkit-text-fill-color: transparent;
@@ -7,15 +8,18 @@
   transition: 0.2s ease-in;
 }
 
-/* Contact page css */
+.ContactImg {
+  max-width: 200px;
+}
+
+.ContactLinks {
+  margin-top: 1rem;
+}
+
 .contactBody {
-  //margin: auto;
-  //position: fixed;
-  //width: 100%;
-  //height: 100%;
-  //justify-content: center;
   padding-top: 2em;
 }
+
 .contactGrid {
   text-align: center;
   justify-content: center;
@@ -24,21 +28,26 @@
   color: $Dolomites-Into-the-Clouds-0-rgba;
   margin-bottom: 20px;
 }
+
 .contactGrid h2 {
   font-family: 'Anton', sans-serif;
 }
+
 .contactGrid p {
   font-family: 'Oxygen', sans-serif;
   font-weight: bold;
 }
+
 .contactGrid hr {
   border-top: 5px dotted $Dolomites-Into-the-Clouds-0-rgba;
   width: 50%;
   margin: auto;
 }
+
 .contactList {
   color: $Dolomites-Into-the-Clouds-0-rgba;
 }
+
 .contactList i {
   font-size: 66px;
   padding-right: 5rem;
@@ -47,4 +56,10 @@
 
 .contactLinks {
   color: $Dolomites-Links;
+}
+
+.ListItemContent {
+  font-size: 30px;
+  color: white;
+  font-family: 'Anton', sans-serif;
 }
