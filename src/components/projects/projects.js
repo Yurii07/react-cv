@@ -15,22 +15,19 @@ class Projects extends Component {
         const {activeTab, cards} = this.props;
         const isShowAllCards = activeTab !== 0;
 
-        const filterActiveTab = () => {
+        const renderCards = (filteredCard, index) => (
+            <Cards
+                filtercard={filteredCard}
+                key={index}
+            />
+        );
 
+        const filterActiveTab = () => {
+            let finalArrCards = cards;
             if (isShowAllCards) {
-                return cards.filter(card => card.idTab === activeTab).map((filteredCard, index) => (
-                    <Cards
-                        filtercard={filteredCard}
-                        key={index}
-                    />
-                ))
+                finalArrCards = cards.filter(card => card.idTab === activeTab);
             }
-            return cards.map((filteredCard, index) => (
-                <Cards
-                    filtercard={filteredCard}
-                    key={index}
-                />
-            ))
+            return finalArrCards.map(renderCards);
         }
 
         return (
@@ -40,11 +37,11 @@ class Projects extends Component {
                     onChange={(tabId) => this.handleClick(tabId)}
                     ripple>
                     <Tab className='tabs'>All</Tab>
-
                     <Tab className='tabs'>Front-end</Tab>
                     <Tab className='tabs'>React</Tab>
                     <Tab className='tabs'>Javascript</Tab>
                     <Tab className='tabs'>Latest</Tab>
+
                     <Tab className='tabs'>SHOW ALL</Tab>
                 </Tabs>
                 <Grid>
