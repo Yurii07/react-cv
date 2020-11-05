@@ -1,22 +1,42 @@
 import React, {Component} from 'react';
-import {Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton} from 'react-mdl';
+import {Tabs, Tab, Grid, Cell} from 'react-mdl';
 import {connect} from 'react-redux'
 import {onToggleTabId} from "../../redux/action/actions";
 import './projects.scss';
+import Cards from "./Cards";
+
 class Projects extends Component {
 
     handleClick = tabId => {
-        console.log(tabId);
         this.props.onToggleActive(tabId);
     }
 
     render() {
-        // console.log('project', this.props);
+        const {activeTab, cards} = this.props;
+        const isShowAllCards = activeTab !== 0;
+
+        const filterActiveTab = () => {
+
+            if (isShowAllCards) {
+                return cards.filter(card => card.idTab === activeTab).map((filteredCard, index) => (
+                    <Cards
+                        filtercard={filteredCard}
+                        key={index}
+                    />
+                ))
+            }
+            return cards.map((filteredCard, index) => (
+                <Cards
+                    filtercard={filteredCard}
+                    key={index}
+                />
+            ))
+        }
 
         return (
             <div className="demo-tabs">
                 <Tabs
-                    activeTab={this.props.activeTab}
+                    activeTab={activeTab}
                     onChange={(tabId) => this.handleClick(tabId)}
                     ripple>
                     <Tab className='tabs'>All</Tab>
@@ -25,63 +45,14 @@ class Projects extends Component {
                     <Tab className='tabs'>React</Tab>
                     <Tab className='tabs'>Javascript</Tab>
                     <Tab className='tabs'>Latest</Tab>
+                    <Tab className='tabs'>SHOW ALL</Tab>
                 </Tabs>
                 <Grid>
                     <Cell col={12}>
                         <div className="content">
-                            {
-                                this.props.activeTab !== 0 ?
-                                    <div className="projects-grid"> {
-                                        this.props.cards.filter(card => card.idTab === this.props.activeTab).map(filteredCard => (
-
-                                            <Card shadow={5} style={{minWidth: '450', margin: '5px auto'}}>
-                                                <CardTitle style={{
-                                                    background: `url(${filteredCard.urlImage}) center / cover`
-                                                }}>
-                                                    {filteredCard.title}
-                                                </CardTitle>
-                                                <CardText>
-                                                    {filteredCard.text}
-                                                </CardText>
-                                                <CardActions border>
-                                                    <Button colored disabled>GitHub</Button>
-                                                    <Button colored disabled>CodePen</Button>
-                                                    <Button colored
-                                                            onClick={event => window.location.href = `${filteredCard.urlProject}`}>Live
-                                                        Demo</Button>
-                                                </CardActions>
-                                                <CardMenu style={{color: '#fff'}}>
-                                                    <IconButton name="share"/>
-                                                </CardMenu>
-                                            </Card>
-                                        ))
-                                    }</div> :
-                                    <div className="projects-grid">{
-                                        this.props.cards.map(filteredCard => (
-
-                                            <Card shadow={5} style={{minWidth: '450', margin: '5px auto'}}>
-                                                <CardTitle style={{
-                                                    background: `url(${filteredCard.urlImage}) center / cover`
-                                                }}>
-                                                    {filteredCard.title}
-                                                </CardTitle>
-                                                <CardText>
-                                                    {filteredCard.text}
-                                                </CardText>
-                                                <CardActions border>
-                                                    <Button colored disabled>GitHub</Button>
-                                                    <Button colored disabled>CodePen</Button>
-                                                    <Button colored
-                                                            onClick={event => window.location.href = `${filteredCard.urlProject}`}>Live
-                                                        Demo</Button>
-                                                </CardActions>
-                                                <CardMenu style={{color: '#fff'}}>
-                                                    <IconButton name="share"/>
-                                                </CardMenu>
-                                            </Card>
-                                        ))
-                                    }</div>
-                            }
+                            <div className="projects-grid">
+                                {filterActiveTab()}
+                            </div>
                         </div>
                     </Cell>
                 </Grid>
@@ -103,7 +74,5 @@ function mapDispatchToProps(dispatch) {
         onToggleActive: tabId => dispatch(onToggleTabId(tabId))
     }
 }
-
-//todo save to state click
 
 export default connect(mapStateToProps, mapDispatchToProps)(Projects);
