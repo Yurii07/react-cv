@@ -42,7 +42,7 @@ class Projects extends Component {
                     <Tab className='tabs'>Javascript</Tab>
                     <Tab className='tabs'>Latest</Tab>
 
-                    <Tab className='tabs'>SHOW ALL</Tab>
+                    {/*<Tab className='tabs'>SHOW ALL</Tab>*/}
                 </Tabs>
                 <Grid>
                     <Cell col={12}>
