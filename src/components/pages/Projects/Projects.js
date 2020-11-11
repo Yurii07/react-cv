@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Tabs, Tab, Grid, Cell} from 'react-mdl';
 import {connect} from 'react-redux'
-import {onToggleTabId} from "../../redux/action/actions";
+import {onToggleTabId} from "../../../redux/action/actions";
 import './projects.scss';
 import Cards from "./Cards";
 

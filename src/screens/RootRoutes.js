@@ -1,8 +1,8 @@
-import Landing from "./main/landingpage";
-import AboutMe from "./AboutMe/AboutMe";
-import Contact from "./Contact/Contact";
-import Projects from "./projects/projects";
-import Resume from "./resume/resume";
+import Landing from "../components/pages/Homepage/Homepage";
+import AboutMe from "../components/pages/AboutMe/AboutMe";
+import Contact from "../components/pages/Contact/Contact";
+import Projects from "../components/pages/Projects/Projects";
+import Resume from "../components/pages/Resume/Resume";
 
 export default [
     {

@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import {Layout, Header, Navigation, Drawer, Content} from 'react-mdl';
-import Routes from './components/main/Routes';
+import Routes from './screens/Routes';
 import {BrowserRouter as Router, Link} from 'react-router-dom';
 import './App.scss';
+import Loader from "./components/loader/Loader";
 
 const App = () => {
     const [loading, setLoading] = useState(true)
@@ -40,10 +41,11 @@ const App = () => {
                     </Drawer>
 
                     <Content>
+
                         <div className="page-content "/>
                         {!loading
                             ? <Routes/>
-                            : <div className='loader'/>
+                            : <Loader/>
                         }
                     </Content>
                 </Router>
