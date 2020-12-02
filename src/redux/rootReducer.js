@@ -14,6 +14,7 @@ import {
     project12,
     project13,
     project14,
+    project15,
 } from "../components/images";
 
 const initialState = {
@@ -26,6 +27,14 @@ const initialState = {
             title: 'Millionaire game',
             text: 'Who Wants to Be a Millionaire? (abbreviated WWTBAM and informally known as simply Millionaire) is an international television game show franchise of British origin, created by David Briggs, Mike Whitehill and Steven Knight.',
             urlProject: 'https://yurii07.github.io/millionaire/',
+        },
+        {
+            name: 'LATEST',
+            idTab: 4,
+            urlImage: project15,
+            title: 'Todo app',
+            text: 'Todo app with firebase',
+            urlProject: 'https://keep-a7233.web.app/',
         },
         {
             name: 'FRONT-END',
@@ -116,6 +125,14 @@ const initialState = {
             title: 'Millionaire game',
             text: 'Who Wants to Be a Millionaire? (abbreviated WWTBAM and informally known as simply Millionaire) is an international television game show franchise of British origin, created by David Briggs, Mike Whitehill and Steven Knight.',
             urlProject: 'https://yurii07.github.io/millionaire/',
+        },
+        {
+            name: 'REACT',
+            idTab: 2,
+            urlImage: project15,
+            title: 'Todo app',
+            text: 'Todo app with firebase',
+            urlProject: 'https://keep-a7233.web.app/',
         },
         {
             name: 'JS',
