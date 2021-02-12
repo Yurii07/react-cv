@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cfa4134d5281879eaca8b0b4dc40822a",
+    "revision": "1a4d108017b0342ade21cce52354ccd9",
     "url": "/react-cv/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-cv/static/css/2.f47cdb75.chunk.css"
   },
   {
-    "revision": "d6f99a29d5541088fc75",
+    "revision": "7c14ecfa2f34b7917d7f",
     "url": "/react-cv/static/css/main.a17f10fa.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-cv/static/js/2.f1659d89.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d6f99a29d5541088fc75",
-    "url": "/react-cv/static/js/main.662e8c0f.chunk.js"
+    "revision": "7c14ecfa2f34b7917d7f",
+    "url": "/react-cv/static/js/main.0ba745b6.chunk.js"
   },
   {
     "revision": "34344c68a4095068861c",
@@ -34,6 +34,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3ac4c5b4680da8ab7ff4bc3938a06a55",
     "url": "/react-cv/static/media/bitcoin_bg.3ac4c5b4.jpg"
+  },
+  {
+    "revision": "8f283828cd00725053b907f6c328a107",
+    "url": "/react-cv/static/media/crud-todo.8f283828.png"
   },
   {
     "revision": "b47c6e712de506b48b07f813517e485d",
