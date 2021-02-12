@@ -19,6 +19,7 @@ export const project12 = require('../images/projects/api.JPG');
 export const project13 = require('../images/projects/movie-app.png');
 export const project14 = require('../images/projects/millionaire.jpg');
 export const project15 = require('../images/projects/todo-project15.png');
+export const project16 = require('../images/projects/crud-todo.png');
 
 // export const images = [
 //     { id: 1, src: require('../images/testimonials/testimonial-en-1.png'), title: 'foo', description: 'bar' },

@@ -15,6 +15,7 @@ import {
     project13,
     project14,
     project15,
+    project16,
 } from "../components/images";
 
 const initialState = {
@@ -35,6 +36,14 @@ const initialState = {
             title: 'Todo app',
             text: 'Todo app with firebase',
             urlProject: 'https://keep-a7233.web.app/',
+        },
+        {
+            name: 'LATEST',
+            idTab: 4,
+            urlImage: project16,
+            title: 'Todo app',
+            text: 'Todo app ',
+            urlProject: 'https://yurii07.github.io/react-todo/',
         },
         {
             name: 'FRONT-END',
@@ -133,6 +142,14 @@ const initialState = {
             title: 'Todo app',
             text: 'Todo app with firebase',
             urlProject: 'https://keep-a7233.web.app/',
+        },
+        {
+            name: 'REACT',
+            idTab: 2,
+            urlImage: project16,
+            title: 'Todo app',
+            text: 'Todo app ',
+            urlProject: 'https://yurii07.github.io/react-todo/',
         },
         {
             name: 'JS',
